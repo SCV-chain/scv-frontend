@@ -1,10 +1,14 @@
 import React from 'react'
 import { Input, Icon, Dropdown } from 'semantic-ui-react'
-import { position, workingType } from '../../../../Components/Data/Data'
+import {
+  position,
+  workingType,
+  category,
+  experience,
+} from '../../../../Components/Data/Data'
 import './search.css'
-import { category, experience } from './../../../../Components/Data/Data'
 
-export default function Search() {
+export default function SearchForTalent() {
   return (
     <div className="searchJob">
       <div className="search">
@@ -15,6 +19,12 @@ export default function Search() {
       </div>
       <div className="filterBar">
         <div className="filterJob">
+          <Dropdown
+            placeholder="Place to work"
+            selection
+            options={workingType}
+            className="filterType"
+          />
           <Dropdown
             placeholder="Working Type"
             selection

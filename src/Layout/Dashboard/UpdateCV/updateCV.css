@@ -1,6 +1,6 @@
 .updateCVContainer {
     width: 86%;
-    height: 100vh;
+    height: 100%;
 }
 .cardCV {
     background-color: #f3f3f3;
@@ -62,8 +62,8 @@
 }
 
 .buttonCreateNewCV {
-    width: 246px;
-    height: 246px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     background: #ef6565;

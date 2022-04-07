@@ -2,7 +2,7 @@ import React from 'react'
 import './updateCV.css'
 import HeaderDashboard from './../HeaderDashboard/HeaderDashboard'
 import imgCV from '../../../assets/Image/img1.png'
-import { Image, Icon } from 'semantic-ui-react'
+import { Image, Icon, Input } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 export default function UpdateCV() {
@@ -16,7 +16,7 @@ export default function UpdateCV() {
             <div className="buttonEditCV">Edit CV</div>
             <div className="dateCreateCV">
               <p className="created">Created</p>
-              <p className="dateCreate">8/20/2019</p>
+              <p className="dateCreate"></p>
             </div>
           </div>
           <div className="cardCVInfoItem">
@@ -28,7 +28,7 @@ export default function UpdateCV() {
             </div>
           </div>
         </div>
-        <Link to="/create-cv">
+        <Link to="/home/create-cv">
           <div className="buttonCreateNewCV">
             <Icon name="plus" className="iconAddNewCV" size="massive"></Icon>
           </div>
