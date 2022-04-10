@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { Component, useEffect, useState } from 'react'
 import { Container, Icon, Button, Image, Form } from 'semantic-ui-react'
 import iconWallet from '../../assets/Image/iconWallet.png'
 import './signUp.css'
 import { Link } from 'react-router-dom'
+import { useSubstrateState } from '../../substrate-lib'
+import { TxButton } from '../../substrate-lib/components'
+
 
 export default function SignUp() {
+  const { api } = useSubstrateState()
+  const [status, setStatus] = useState('')
+
   return (
     <div className="signUp">
       <Container>
@@ -32,15 +38,29 @@ export default function SignUp() {
               name="email"
             />
             <input
-              placeholder="Password"
-              className="inputPassword"
-              type="password"
+              placeholder="Position"
+              className="inputInfo"
+              name="position"
             />
-            <Link to="/login">
-              <Button type="submit" className="textButtonSignUp">
-                SIGN UP
-              </Button>
-            </Link>
+            <input
+              placeholder="Location"
+              className="inputInfo"
+              name="location"
+            />
+            {/* <Button type="submit" className="textButtonSignUp">
+              SIGN UP
+            </Button> */}
+            <TxButton
+              label="SIGN UP"
+              type="SIGNED-TX"
+              setStatus={setStatus}
+              attrs={{
+                palletRpc: 'account',
+                callable: 'register',
+                inputParams: [0],
+                paramFields: [true],
+              }}
+            />
           </form>
         </div>
       </Container>
