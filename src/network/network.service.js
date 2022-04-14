@@ -1,9 +1,9 @@
 
-import React, { useEffect, useState } from 'react'
-import {searchSmartJob} from './api/job';
+import { useEffect, useState } from 'react';
+import { searchSmartJob } from './api/job';
 
 export default  function NetWorkService() {
-  const [keyword, setKeyword] = useState('');
+  const [keyword, setKeyword] = useState(null);
   const [workType, setWorkType] = useState(null);
   const [category, setCategory] = useState(null);
   const [position, setPosition] = useState(null);
@@ -21,8 +21,8 @@ export default  function NetWorkService() {
     setKeyword(e.target.value)
   }
   const onChangeWorkType = (e, data) =>{
-    console.log(data.value);
     setWorkType(data.value);
+    
   }
   const onChangeCategory = (e, data) => {
     setCategory(data.value);
@@ -36,7 +36,6 @@ export default  function NetWorkService() {
     setExperience(data.value);
   }
   const onApplyToFilterJob = async (e) => {
-    console.log("workType", workType);
     if(workType){
       setSearchParams({...searchParams, workType});
     }else {
