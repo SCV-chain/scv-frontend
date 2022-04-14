@@ -106,19 +106,12 @@ export const searchType = [
 
 export const workingType = [
   {
-    key: '0',
-    text: '',
-    value: '',
+    text: 'Remote',
+    value: 'Remote',
   },
   {
-    key: '1',
-    text: 'Working Type 1',
-    value: 'Working Type 1',
-  },
-  {
-    key: '2',
-    text: 'Working Type 2',
-    value: 'Working Type 2',
+    text: 'On Site',
+    value: 'On Site',
   },
 ]
 
@@ -169,35 +162,50 @@ export const schoolarshipFieldTypes = [
 export const category = [
   {
     key: '0',
-    text: '',
+    text: 'All',
     value: '',
   },
   {
     key: '1',
-    text: 'Stevie Feliciano',
-    value: 'Stevie Feliciano',
+    text: 'Developer',
+    value: 'Developer',
   },
   {
     key: '2',
-    text: 'Christian',
-    value: 'Christian',
+    text: 'Marketing',
+    value: 'Marketing',
+  },
+  {
+    key: '3',
+    text: 'IT Manager',
+    value: 'IT Manager',
   },
 ]
 export const position = [
   {
     key: '0',
-    text: '',
+    text: 'All',
     value: '',
   },
   {
     key: '1',
-    text: 'Matt',
-    value: 'Matt',
+    text: 'Backend Developer',
+    value: 'Backend Developer',
   },
   {
     key: '2',
-    text: 'Justen Kitsune',
-    value: 'Justen Kitsune',
+    text: 'Blockchain Developer',
+    value: 'Blockchain Developer',
+  },
+  {
+    key: '3',
+    text: 'Technical Leader',
+    value: 'Technical Leader',
+  },
+  {
+    key: '4',
+    text: 'Project Manager',
+    value: 'Project Manager',
   },
 ]
 
@@ -212,17 +220,17 @@ export const defaultData = {
 export const experience = [
   {
     key: '0',
-    text: '',
-    value: '',
+    text: 'One year',
+    value: 'One year',
   },
   {
     key: '1',
-    text: 'Two month',
-    value: 'Two month',
+    text: 'Five years',
+    value: 'Five years',
   },
   {
     key: '2',
-    text: 'Once year',
-    value: 'Once year',
+    text: 'Ten years',
+    value: 'Ten Years',
   },
 ]

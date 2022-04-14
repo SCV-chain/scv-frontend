@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Container } from 'semantic-ui-react'
+import NetWorkService from '../../../../network/network.service'
 import CardJob from '../CardJob/CardJob'
+import CardScholarship from '../CardScholaship/CardScholarship'
 import Search from '../Search/Search'
 import './containerHomePage.css'
 
-import NetWorkService from '../../../../network/network.service';
-import CardScholarship from '../CardScholaship/CardScholarship'
 
 export default function ContentHomePage() {
     const {
@@ -20,6 +20,7 @@ export default function ContentHomePage() {
       onApplyToFilterJob,
       onKeySearch
     } = NetWorkService();
+
   return (
     <div className="contentHomePage">
       <div className="headerButton">
