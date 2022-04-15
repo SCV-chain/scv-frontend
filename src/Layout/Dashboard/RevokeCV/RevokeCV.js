@@ -546,7 +546,7 @@ export default function RevokeCV() {
               </Form>
             </div>
             <div className="buttonSavePostCV">
-              <Link to="/home-page">
+              <Link to="/home">
                 <Icon name="arrow left" size="big"></Icon>
               </Link>
               <Button type="submit" className="buttonSaveCV">
