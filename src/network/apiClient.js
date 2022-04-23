@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosClient =  axios.create({
-  baseUrl: 'http://localhost:9001/job-matching/v1',
+  baseUrl: 'https://talio-net.com/job-matching/v1',
   headers: { 
     'Content-Type': 'application/json',
     'Accept': 'application/json'
@@ -10,7 +10,7 @@ const axiosClient =  axios.create({
   timeout: 1000
 })
 
-axiosClient.defaults.baseURL = 'http://localhost:9001/job-matching/v1';
+axiosClient.defaults.baseURL = 'https://talio-net.com/job-matching/v1';
 // add an interceptor
 axiosClient.interceptors.response.use(
 function (response){
@@ -35,5 +35,5 @@ function (response){
     // return Promise.reject(error);
 })
 
-export  {axiosClient};
+export { axiosClient };
 
